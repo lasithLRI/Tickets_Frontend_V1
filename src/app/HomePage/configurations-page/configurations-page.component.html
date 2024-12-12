@@ -1,0 +1,44 @@
+<div class="w-full h-auto flex justify-center mt-20">
+
+  <mat-card appearance="outlined" class="w-3/4">
+    <mat-card-content>
+
+      <p class="text-2xl font-semibold mt-10 ml-5">System Configurations Form :</p>
+
+      <form action="" formGroupName="configurationForm" (ngSubmit)="configurationsOnSubmit()">
+        <div class="w-full h-auto px-5 mb-5 mt-10">
+          <label for="maxPool"> Enter Maximum Pool Size :</label>
+          <input type="number" id="maxPool" formControlName="maxTicketPoolSize" class="w-full h-14 pl-10 text-2xl text-gray-600 rounded-lg mt-2" placeholder="Enter Ticket Pool Size">
+        </div>
+
+        <div class="w-full h-auto px-5 mb-5">
+          <label for="maxPool"> Enter Total Tickets :</label>
+          <input type="number" id="total" formControlName="totalTickets" class="w-full h-14 pl-10 text-2xl text-gray-600 rounded-lg mt-2" placeholder="Enter Total Tickets">
+        </div>
+
+
+        <div class="w-full h-auto px-5 mb-5">
+          <label for="release"> Enter Vendor Release Rate (in millisecond) :</label>
+          <input type="number" id="release" formControlName="vendorReleaseRate" class="w-full h-14 pl-10 text-2xl text-gray-600 rounded-lg mt-2" placeholder="Enter Total Tickets">
+        </div>
+
+        <div class="w-full h-auto px-5 mb-5">
+          <label for="retrieval"> Enter Customer Retrieval Rate (in millisecond) :</label>
+          <input type="number" id="retrieval" formControlName="totalTickets" class="w-full h-14 pl-10 text-2xl text-gray-600 rounded-lg mt-2" placeholder="Enter Total Tickets">
+        </div>
+
+        <div class="w-full h-auto px-5 mt-20 flex justify-end">
+
+          <input type="submit" class="w-auto h-auto border-2 border-amber-400 text-gray-800 px-8 py-2 rounded-full hover:bg-amber-400" >
+
+        </div>
+
+
+
+      </form>
+
+    </mat-card-content>
+  </mat-card>
+
+
+</div>
